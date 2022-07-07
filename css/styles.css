@@ -1,13 +1,25 @@
 :root {
   --main-color-text: #333333;
   --secondary-color-text: #ffffff;
+  --green-background: #28a745;
+  --blue-background: #0284d0;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   background: #f4f4f4;
 }
-
+/* header */
+.header-logo {
+  font-style: normal;
+  font-size: 35px;
+  line-height: 1.21;
+  text-decoration: none;
+  color: var(--secondary-color-text);
+}
+.header-logo span {
+  color: var(--green-background);
+}
 /* Section business */
 
 .business-description {
@@ -29,4 +41,56 @@ body {
   line-height: 1.56;
   text-align: center;
   color: var(--main-color-text);
+}
+
+/* professional team */
+.prof-description {
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--main-color-text);
+}
+.prof-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  text-align: center;
+  color: var(--main-color-text);
+}
+.prof-text {
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: var(--main-color-text);
+}
+.prof-list {
+  list-style: none;
+}
+.prof-list h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.27;
+  text-align: center;
+  color: var(--main-color-text);
+}
+.prof-list p {
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: var(--main-color-text);
+}
+
+/* footer */
+.footer {
+  background-color: var(--main-color-text);
+}
+.footer-list {
+  list-style: none;
+  text-align: center;
+}
+.footer-text {
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: var(--secondary-color-text);
 }
