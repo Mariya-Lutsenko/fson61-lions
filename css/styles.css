@@ -1,0 +1,32 @@
+:root {
+  --main-color-text: #333333;
+  --secondary-color-text: #ffffff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f4f4f4;
+}
+
+/* Section business */
+
+.business-description {
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--main-color-text);
+}
+
+.business-title {
+  font-size: 38px;
+  line-height: 1.26;
+  text-align: center;
+  color: var(--main-color-text);
+}
+
+.business-text {
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: var(--main-color-text);
+}
