@@ -135,8 +135,8 @@ img {
   text-align: center;
   color: var(--main-color-text);
 }
-<<<<<<< Updated upstream
-=======
+
+/* section-business */
 
 .business-list {
   display: flex;
@@ -196,4 +196,3 @@ img {
   text-align: center;
   color: var(--secondary-color-text);
 }
->>>>>>> Stashed changes
