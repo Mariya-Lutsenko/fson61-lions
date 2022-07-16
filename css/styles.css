@@ -4,11 +4,10 @@
 
   --logo-color: #28a745;
 
-
   --green-background: #28a745;
   --blue-background: #0284d0;
   --phone-color-text: #808080;
-
+  --hero-color-text: #e9e9e9;
 }
 
 body {
@@ -106,9 +105,6 @@ a {
 /*============== /header ==============*/
 
 /*============== info ==============*/
-.info {
-  background-color: var(--green-background);
-}
 
 .info-description {
   font-size: 20px;
@@ -136,12 +132,84 @@ a {
   color: var(--secondary-color-text);
   background-color: var(--green-background);
 }
+
 /*============== /info ==============*/
+
+/* Section hero */
+
+.hero {
+  padding-top: 215px;
+  padding-bottom: 284px;
+  text-align: center;
+}
+
+.hero-button {
+  border: transparent;
+  border-radius: 5px;
+  padding: 10px 30px 9px 41px;
+}
+
+.hero-title {
+  margin-bottom: 25px;
+
+  color: var(--hero-color-text);
+
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2;
+}
+
+.hero-description {
+  margin-bottom: 29px;
+
+  font-size: 22px;
+  line-height: 1.68;
+}
+
+/* Section about */
+
+.section-about {
+  padding-top: 122px;
+  padding-bottom: 19px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 66px;
+  padding-right: 66px;
+}
+
+.about-item {
+  width: 362px;
+}
+
+.about-subtitle {
+  margin-bottom: 16px;
+
+  font-size: 20px;
+  line-height: 1.65;
+}
 
 /* Section business */
 
 .business {
-  padding: 50px 28px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .business-description {
@@ -171,8 +239,6 @@ a {
   text-align: center;
   color: var(--main-color-text);
 }
-
-/* section-business */
 
 .business-list {
   display: flex;
@@ -220,13 +286,18 @@ a {
   text-align: center;
   color: var(--main-color-text);
 }
-.prof-list p {
-  font-size: 18px;
-  line-height: 1.56;
+
+.prof-item > p {
   text-align: center;
-  color: var(--main-color-text);
 }
 
+.prof-img {
+  margin-bottom: 13px;
+}
+
+.prof-subtitle {
+  margin-bottom: 12px;
+}
 /* Request Callback */
 
 .phone-title {
@@ -237,19 +308,15 @@ a {
 }
 
 .phone-item {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   color: var(--phone-color-text);
 }
 
-.button {
-  font-weight: 400;
-  font-size: 18px;
+.button-request {
   line-height: 1.39;
   text-align: center;
   color: var(--secondary-color-text);
-  background-color: var(#28a745);
   border-radius: 5px;
 }
 
