@@ -1,6 +1,7 @@
 :root {
   --main-color-text: #333333;
   --secondary-color-text: #ffffff;
+  --logo-color: #28a745;
 }
 
 body {
@@ -10,10 +11,6 @@ body {
   line-height: 1.56;
 }
 /*==============general class==============*/
-
-.underlining {
-  text-decoration: none;
-}
 
 .mark {
   list-style: none;
@@ -36,6 +33,10 @@ img {
   display: block;
 }
 
+a {
+  display: block;
+}
+
 .container {
   width: 1360px;
   padding-left: 15px;
@@ -52,21 +53,49 @@ img {
   background-color: grey;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
-  font-style: normal;
+  display: flex;
+
+  margin-left: 50px;
   font-size: 35px;
-  line-height: 1.21;
+  line-height: 1.2;
   text-decoration: none;
   color: var(--secondary-color-text);
 }
 
-.header-logo span {
-  color: var(--green-background);
+.logo-decoration {
+  color: var(--logo-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-item {
+  margin-right: 38px;
 }
 
 .header-link {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   color: var(--secondary-color-text);
+
+  text-decoration: none;
 }
+
 /*============== /header ==============*/
 
 /*============== info ==============*/
