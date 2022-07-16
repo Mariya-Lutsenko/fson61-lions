@@ -137,10 +137,14 @@ a {
 
 /* Section hero */
 
-.hero {
+.section-hero {
   padding-top: 215px;
   padding-bottom: 284px;
+}
+
+.hero {
   text-align: center;
+  
 }
 
 .hero-button {
@@ -169,7 +173,7 @@ a {
 /* Section about */
 
 .section-about {
-  padding-top: 122px;
+  padding-top: 40px;
   padding-bottom: 19px;
 }
 
