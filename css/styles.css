@@ -4,11 +4,11 @@
 
   --logo-color: #28a745;
 
+  --hero-title-color: #e9e9e9;
 
   --green-background: #28a745;
   --blue-background: #0284d0;
   --phone-color-text: #808080;
-
 }
 
 body {
@@ -52,12 +52,25 @@ a {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
 /*==============/general class==============*/
 
 /*==============header ==============*/
 
 .header {
-  background-color: grey;
+  background-color: var(--phone-color-text);
 }
 
 .logo {
@@ -72,7 +85,6 @@ a {
 
 .header-logo {
   display: flex;
-
   margin-left: 50px;
   font-size: 35px;
   line-height: 1.2;
@@ -104,7 +116,81 @@ a {
 }
 
 /*============== /header ==============*/
+/* ========= hero ========= */
+.hero {
+  padding-top: 210px;
+  padding-bottom: 280px;
 
+  background-color: var(--phone-color-text);
+  text-align: center;
+}
+.hero-title {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2;
+  color: var(--hero-title-color);
+}
+.hero-description {
+  margin-bottom: 29px;
+  font-size: 22px;
+  line-height: 1.67;
+  color: var(--hero-title-color);
+}
+
+.hero-button {
+  cursor: pointer;
+  display: inline-block;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  min-width: 165px;
+  height: 48px;
+  border: none;
+  background-color: var(--green-background);
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: var(--secondary-color-text);
+}
+/* ========= /hero ========= */
+
+/* ======== about ========= */
+.about {
+  padding-top: 122px;
+  padding-bottom: 19px;
+}
+.about-list {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  column-gap: 100px;
+}
+.about-item {
+  width: 362px;
+  flex-basis: calc((100% - 200px) / 3);
+}
+
+.about-subtitle {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--main-color-text);
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: var(--main-color-text);
+}
+/* ======== /about ========= */
 /*============== info ==============*/
 .info {
   background-color: var(--green-background);
@@ -186,6 +272,7 @@ a {
   padding-top: 49px;
   padding-bottom: 59px;
 }
+
 .prof-description {
   margin-bottom: 16px;
   font-size: 20px;
@@ -213,7 +300,11 @@ a {
   list-style: none;
   column-gap: 35px;
 }
+.prof-item {
+  flex-basis: calc((100% - 105px) / 3);
+}
 .prof-list h3 {
+  margin-bottom: 12px;
   font-weight: 400;
   font-size: 25px;
   line-height: 1.27;
@@ -225,6 +316,11 @@ a {
   line-height: 1.56;
   text-align: center;
   color: var(--main-color-text);
+}
+.prof-content {
+  padding-top: 13px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 /* Request Callback */
