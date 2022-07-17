@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Finance Ledger</title>
+
+    <!-- font-famaly -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
-	 
-    <!-- favicon -->
 
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
@@ -22,191 +24,292 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-	 <!-- connect css styles -->
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- normalize -->
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- connect css styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
 
     <header class="header">
-		<div class="container nav">
-      <nav class="header-navigation">
-			<div class="logo">
-        <a class="header-logo" href="./index.html" >
-			<img src="./images/header/logo.svg" alt="logo"><span class="logo-decoration">Finance</span> Ledger
-		</a>
-		</div>
-        <ul class="header-list mark">
-          <li class="header-item"><a class="header-link" href="">Home</a></li>
-          <li class="header-item"><a class="header-link" href="">About</a></li>
-          <li class="header-item"><a class="header-link" href="">Cases</a></li>
-          <li class="header-item"><a class="header-link" href="">Blog</a></li>
-          <li class="header-item"><a class="header-link" href="">Contact</a></li>
-        </ul>
-      </nav>
-		</div>
+      <div class="container">
+        <nav class="header-navigation">
+          <a class="header-logo link" href="./index.html">
+            <img
+              class="header-logo-img"
+              src="./images/header/logo.svg"
+              alt="logo"
+              width="39"
+              height="30"
+            /><span class="logo-decoration">Finance</span>
+            Ledger
+          </a>
+
+          <ul class="header-list list">
+            <li class="header-item"><a class="header-link" href="">Home</a></li>
+            <li class="header-item"><a class="header-link" href="">About</a></li>
+            <li class="header-item"><a class="header-link" href="">Cases</a></li>
+            <li class="header-item"><a class="header-link" href="">Blog</a></li>
+            <li class="header-item"><a class="header-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Main content -->
 
     <main>
       <section class="section-hero">
-			<div class="container hero">
-        <h1 class="hero-title">The Sky Is The Limit</h1>
-        <p class="hero-description">We provide world class financial assistance</p>
-        <button class="button hero-button" type="button">Read More</button>
-		  </div>
+        <div class="container hero">
+          <h1 class="hero-title">The Sky Is The Limit</h1>
+          <p class="hero-description">We provide world class financial assistance</p>
+          <button class="button hero-button" type="button">Read More</button>
+        </div>
       </section>
 
       <!-- About -->
 
       <section class="section-about">
-			<div class="container about">
-        <h2 class="visually-hidden">About</h2>
-        <ul class="mark about-list">
-          <li class="about-item">
-            <h3 class="about-subtitle">Investmant Banking</h3>
-            <p class="about-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
-            </p>
-          </li>
-          <li class="about-item">
-            <h3 class="about-subtitle">Portfolio Manager</h3>
-            <p class="about-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
-            </p>
-          </li>
-          <li class="about-item">
-            <h3 class="about-subtitle">Tax & Custudio</h3>
-            <p class="about-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
-            </p>
-          </li>
-        </ul>
-		  </div>
+        <div class="container about">
+          <h2 class="visually-hidden">About</h2>
+          <ul class="about-list list">
+            <li class="about-item">
+              <h3 class="about-subtitle">Investmant Banking</h3>
+              <p class="about-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+            <li class="about-item">
+              <h3 class="about-subtitle">Portfolio Manager</h3>
+              <p class="about-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+            <li class="about-item">
+              <h3 class="about-subtitle">Tax & Custudio</h3>
+              <p class="about-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- section-info -->
 
       <section class="section-info">
-      <section class="info">
-			<div class="container">
-        <img
-          class="section-img"
-          src="./images/section-team/team.jpg"
-          alt="our team"
-          width="680"
-          height="460"
-        />
-        <h2 class="section-search">What you are looking for</h2>
-        <h3 class="section-offer">We provide bespoke solutions</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
-          quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
-          itaque rerum temporibus doloribus iste maiores deleniti?
-        </p>
-        <button class="button" type="button">Read More</button>
-		  </div>
+        <div class="container">
+          <img
+            class="section-img"
+            src="./images/section-team/team.jpg"
+            alt="our team"
+            width="680"
+            height="460"
+          />
+          <h2 class="section-search">What you are looking for</h2>
+          <h3 class="section-offer">We provide bespoke solutions</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+            quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+            itaque rerum temporibus doloribus iste maiores deleniti?
+          </p>
+          <button class="button" type="button">Read More</button>
+        </div>
       </section>
 
       <!-- Section business -->
 
       <section class="business">
-			<div class="container">
-        <p class="business-description">This is what we do</p>
-        <h2 class="business-title">Business Cases</h2>
-        <p class="business-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
-        </p>
-		  <ul class="business-list mark">
-			<li class="business-item"><img class="business-image" src="./images/section-business/agreement.jpg" alt="agreement" width="320" height="214"/></li>
-			<li class="business-item"><img class="business-image" src="./images/section-business/graphics.jpg" alt="graphics" width="320" height="214" /></li>
-			<li class="business-item"><img class="business-image" src="./images/section-business/accord.jpg" alt="accord" width="320" height="214" /></li>
-			<li class="business-item"><img class="business-image" src="/images/section-business/team.jpg" alt="team" width="320" height="214" /></li>
-			<li class="business-item"><img class="business-image" src="./images/section-business/work.jpg" alt="work" width="320" height="214" /></li>
-			<li class="business-item"><img class="business-image" src="./images/section-business/world.jpg" alt="world" width="320" height="214" /></li>
-			<li class="business-item"><img class="business-image" src="./images/section-business/career.jpg" alt="career" width="320" height="214" /></li>
-			<li class="business-item"><img class="business-image" src="./images/section-business/assistance.jpg" alt="assistance" width="320" height="214"/></li>
-		  </ul> 
-       	 </div>
+        <div class="container">
+          <p class="business-description">This is what we do</p>
+          <h2 class="business-title">Business Cases</h2>
+          <p class="business-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+          </p>
+          <ul class="business-list list">
+            <li class="business-item">
+              <img
+                class="business-image"
+                src="./images/section-business/agreement.jpg"
+                alt="agreement"
+                width="320"
+                height="214"
+              />
+            </li>
+            <li class="business-item">
+              <img
+                class="business-image"
+                src="./images/section-business/graphics.jpg"
+                alt="graphics"
+                width="320"
+                height="214"
+              />
+            </li>
+            <li class="business-item">
+              <img
+                class="business-image"
+                src="./images/section-business/accord.jpg"
+                alt="accord"
+                width="320"
+                height="214"
+              />
+            </li>
+            <li class="business-item">
+              <img
+                class="business-image"
+                src="/images/section-business/team.jpg"
+                alt="team"
+                width="320"
+                height="214"
+              />
+            </li>
+            <li class="business-item">
+              <img
+                class="business-image"
+                src="./images/section-business/work.jpg"
+                alt="work"
+                width="320"
+                height="214"
+              />
+            </li>
+            <li class="business-item">
+              <img
+                class="business-image"
+                src="./images/section-business/world.jpg"
+                alt="world"
+                width="320"
+                height="214"
+              />
+            </li>
+            <li class="business-item">
+              <img
+                class="business-image"
+                src="./images/section-business/career.jpg"
+                alt="career"
+                width="320"
+                height="214"
+              />
+            </li>
+            <li class="business-item">
+              <img
+                class="business-image"
+                src="./images/section-business/assistance.jpg"
+                alt="assistance"
+                width="320"
+                height="214"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- section blog (coffee)-->
 
       <section class="blog">
-			<div class="container">
-        <time datetime="2020-04-16">April 16 2020</time>
-        <h2 class="blog-title">Blog Post One</h2>
-        <p class="blog-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
-          quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
-          itaque rerum temporibus doloribus iste maiores deleniti?
-        </p>
-        <a class="link" href="#">Read Our Blog</a>
-        <img
-          class="blog-image"
-          src="./images/blog/notes-and-coffe.jpg"
-          alt="notes and coffee on a table"
-          width="680"
-          height="517"
-        />
-		  </div>
+        <div class="container">
+          <time datetime="2020-04-16">April 16 2020</time>
+          <h2 class="blog-title">Blog Post One</h2>
+          <p class="blog-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+            quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+            itaque rerum temporibus doloribus iste maiores deleniti?
+          </p>
+          <a class="link" href="#">Read Our Blog</a>
+          <img
+            class="blog-image"
+            src="./images/blog/notes-and-coffe.jpg"
+            alt="notes and coffee on a table"
+            width="680"
+            height="517"
+          />
+        </div>
       </section>
 
-    
-       <!-- professional team -->
+      <!-- professional team -->
       <section class="professional-section">
-			<div class="container">
-        <p class="prof-description">Who we are</p>
-        <h2 class="prof-title">Our Professional Team</h2>
-        <p class="prof-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
-        </p>
-        <ul class="prof-list">
-          <li class="prof-item"><img src="./images/section-professional/john-doe.jpg" alt="John Doe" width="420" height="280">
-            <div class="prof-content">
-          <h3>John Doe</h3>
-          <p>President</p> </div> </li>
-          <li class="prof-item"><img src="./images/section-professional/jane-doe.jpg" alt="Jane Doe" width="420" height="280">
-            <div class="prof-content">
-          <h3>Jane Doe</h3>
-          <p>Vice President</p></div></li>
-          <li class="prof-item"><img src="./images/section-professional/steve-smith.jpg" alt="Steve Smith"  width="420" height="280">
-             <div class="prof-content">
-          <h3>Steve Smith</h3>
-          <p>Marketing Head</p></div></li>
-        </ul>
-		  </div>
+        <div class="container">
+          <p class="prof-description">Who we are</p>
+          <h2 class="prof-title">Our Professional Team</h2>
+          <p class="prof-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+          </p>
+          <ul class="prof-list">
+            <li class="prof-item">
+              <img
+                src="./images/section-professional/john-doe.jpg"
+                alt="John Doe"
+                width="420"
+                height="280"
+              />
+              <div class="prof-content">
+                <h3>John Doe</h3>
+                <p>President</p>
+              </div>
+            </li>
+            <li class="prof-item">
+              <img
+                src="./images/section-professional/jane-doe.jpg"
+                alt="Jane Doe"
+                width="420"
+                height="280"
+              />
+              <div class="prof-content">
+                <h3>Jane Doe</h3>
+                <p>Vice President</p>
+              </div>
+            </li>
+            <li class="prof-item">
+              <img
+                src="./images/section-professional/steve-smith.jpg"
+                alt="Steve Smith"
+                width="420"
+                height="280"
+              />
+              <div class="prof-content">
+                <h3>Steve Smith</h3>
+                <p>Marketing Head</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--Request Callback-->
 
-
       <section class="phone-section">
-			<div class="container">
-        <img src="./images/callback/callback.jpg" alt="mobile phone" width="680" height="460" />
-        <h3 class="phone-title">Request Callback</h3>
-        <ul class="phone-list">
-          <li class="phone-item">Enter your name</li>
-          <li class="phone-item">Enter email*</li>
-        </ul>
-        <button class="button button-request" type="button">Send</button>
+        <div class="container">
+          <img src="./images/callback/callback.jpg" alt="mobile phone" width="680" height="460" />
+          <h3 class="phone-title">Request Callback</h3>
+          <ul class="phone-list">
+            <li class="phone-item">Enter your name</li>
+            <li class="phone-item">Enter email*</li>
+          </ul>
+          <button class="button button-request" type="button">Send</button>
+        </div>
       </section>
-		</div>
     </main>
 
     <footer class="footer">
-		<div class="container">
-      <ul class="footer-list">
-        <li><a href="">facebook</a></li>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Youtube</a></li>
-        <li><a href="">LinkdIn</a></li>
-      </ul>
-      <p class="footer-text"> Copyright &#169; <time datetime="2021">2021</time> - FinanceLedger</p>
-		</div>
+      <div class="container">
+        <ul class="footer-list">
+          <li><a href="">facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Youtube</a></li>
+          <li><a href="">LinkdIn</a></li>
+        </ul>
+        <p class="footer-text">
+          Copyright &#169; <time datetime="2021">2021</time> - FinanceLedger
+        </p>
+      </div>
     </footer>
   </body>
 </html>

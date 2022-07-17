@@ -15,38 +15,55 @@ body {
   background-color: var(--secondary-color-text);
   font-size: 18px;
   line-height: 1.56;
+  color: var(--main-color-text);
 }
 /*==============general class==============*/
 
-.mark {
-  list-style: none;
+html {
+  box-sizing: border-box;
 }
-
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
-
+/* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
-
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+/* Свойства для корректного отображения картинок */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+/* Свойства для обнуления курсива у address */
 
-a {
-  display: block;
+address {
+  font-style: normal;
 }
 
 .container {
   width: 1360px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 28px;
+  padding-right: 28px;
   outline: 1px solid tomato;
   margin: 0 auto;
 }
@@ -59,9 +76,8 @@ a {
   background-color: grey;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.header .container {
+  padding: 0 50px;
 }
 
 .header-navigation {
@@ -71,31 +87,37 @@ a {
 
 .header-logo {
   display: flex;
-
-  margin-left: 50px;
+  align-items: center;
   font-size: 35px;
-  line-height: 1.2;
-  text-decoration: none;
+  line-height: 1.21;
   color: var(--secondary-color-text);
+
+  margin-right: auto;
 }
 
 .logo-decoration {
+  margin-right: 5px;
   color: var(--logo-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header-list {
-  display: flex;
-  margin-left: auto;
+.header-logo-img {
+  margin-right: 10px;
 }
 
-.header-item {
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
   margin-right: 38px;
 }
 
 .header-link {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   color: var(--secondary-color-text);
 
@@ -218,8 +240,6 @@ a {
 .business-description {
   margin-bottom: 15px;
 
-  color: var(--main-color-text);
-
   font-size: 20px;
   line-height: 1.65;
   text-align: center;
@@ -227,8 +247,6 @@ a {
 
 .business-title {
   margin-bottom: 34px;
-
-  color: var(--main-color-text);
 
   font-weight: 300;
   font-size: 38px;
@@ -240,7 +258,6 @@ a {
   padding-bottom: 39px;
 
   text-align: center;
-  color: var(--main-color-text);
 }
 
 .business-list {
@@ -261,7 +278,6 @@ a {
   font-size: 20px;
   line-height: 1.65;
   text-align: center;
-  color: var(--main-color-text);
 }
 .prof-title {
   margin-bottom: 34px;
@@ -269,14 +285,12 @@ a {
   font-size: 38px;
   line-height: 1.26;
   text-align: center;
-  color: var(--main-color-text);
 }
 .prof-text {
   margin-bottom: 45px;
   font-size: 18px;
   line-height: 1.56;
   text-align: center;
-  color: var(--main-color-text);
 }
 .prof-list {
   display: flex;
@@ -292,13 +306,11 @@ a {
   font-size: 25px;
   line-height: 1.27;
   text-align: center;
-  color: var(--main-color-text);
 }
 .prof-list p {
   font-size: 18px;
   line-height: 1.56;
   text-align: center;
-  color: var(--main-color-text);
 }
 .prof-content {
   padding-top: 13px;
@@ -311,7 +323,6 @@ a {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
-  color: var(--main-color-text);
 }
 
 .phone-item {
