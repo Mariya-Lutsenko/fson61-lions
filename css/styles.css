@@ -4,6 +4,7 @@
 
   --logo-color: #28a745;
 
+  --section-about-background: #f4f4f4;
   --green-background: #28a745;
   --blue-background: #0284d0;
   --phone-color-text: #808080;
@@ -160,7 +161,8 @@ address {
 /* Section hero */
 
 .section-hero {
-  padding-top: 215px;
+  background-color: var(--blue-background);
+  padding-top: 279px;
   padding-bottom: 284px;
 }
 
@@ -185,6 +187,7 @@ address {
 }
 
 .hero-description {
+  color: var(--hero-color-text);
   margin-bottom: 29px;
 
   font-size: 22px;
@@ -194,8 +197,9 @@ address {
 /* Section about */
 
 .section-about {
-  padding-top: 40px;
+  padding-top: 122px;
   padding-bottom: 19px;
+  background-color: var(--section-about-background);
 }
 
 .visually-hidden {
@@ -228,6 +232,7 @@ address {
 
   font-size: 20px;
   line-height: 1.65;
+  font-weight: 400;
 }
 
 /* Section business */
