@@ -238,22 +238,25 @@
 
       <section class="blog">
         <div class="container">
-          <time datetime="2020-04-16">April 16 2020</time>
+			<div class="blog-content-wrapper">
+          <time class="time" datetime="2020-04-16">April 16 2020</time>
           <h2 class="blog-title">Blog Post One</h2>
           <p class="blog-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
             quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
             itaque rerum temporibus doloribus iste maiores deleniti?
           </p>
-          <a class="link" href="#">Read Our Blog</a>
-          <img
+          <button class="blog-button button" type="button">Read Our Blog</a>
+			 </div>
+			          <img
             class="blog-image"
             src="./images/blog/notes-and-coffe.jpg"
             alt="notes and coffee on a table"
             width="680"
             height="517"
           />
-        </div>
+			</div>
+        
       </section>
 
       <!-- professional team -->
@@ -278,16 +281,46 @@
               </div>
             </li>
             <li class="prof-item">
+					<div class="prof-wrapper">
               <img
                 src="./images/section-professional/jane-doe.jpg"
                 alt="Jane Doe"
                 width="420"
                 height="280"
               />
+				
               <div class="prof-content">
                 <h3 class="prof-name">Jane Doe</h3>
                 <p class="prof-position">Vice President</p>
-              </div>
+					 </div>
+					 <ul class="social-list list">
+					<li class="social-item">
+						<a class="social-link link" href=""><svg class="social-icon" width="35" height="35">
+							<use href="./images/sprite/symbol-defs.svg#icon-facebook"></use>
+						</svg></a>
+						
+					</li>
+					<li class="social-item">
+						<a class="social-link link" href=""><svg class="social-icon" width="35" height="35">
+							<use href="./images/sprite/symbol-defs.svg#icon-twitter"></use>
+						</svg></a>
+						
+					</li>
+					<li class="social-item">
+						<a class="social-link link" href=""><svg class="social-icon" width="40" height="35">
+							<use href="./images/sprite/symbol-defs.svg#icon-youtube"></use>
+						</svg></a>
+						
+					</li>
+					<li class="social-item">		
+						<a class="social-link link" href=""><svg class="social-icon" width="31" height="35">
+							<use href="./images/sprite/symbol-defs.svg#icon-linkedin"></use>
+						</svg></a>
+					</li>
+				  </ul>
+				  </div>
+					 
+              
             </li>
             <li class="prof-item">
               <img
