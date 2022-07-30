@@ -36,7 +36,7 @@
   </head>
   <body>
     <!-- header -->
-
+<div class="background-overlay">
     <header class="header">
       <div class="container">
         <nav class="header-navigation">
@@ -69,9 +69,13 @@
         <div class="container hero">
           <h1 class="hero-title">The Sky Is The Limit</h1>
           <p class="hero-description">We provide world class financial assistance</p>
-          <button class="button hero-button" type="button">Read More</button>
+          <button class="button hero-button" type="button">
+				<svg class="button-icon" width="7" height="11">
+					<use href="./images/sprite/symbol-defs.svg#icon-button"> </use>
+				</svg>Read More</button>
         </div>
       </section>
+		</div>
 
       <!-- About -->
 
@@ -80,6 +84,11 @@
           <h2 class="visually-hidden">About</h2>
           <ul class="about-list list">
             <li class="about-item">
+					<div class="about-icon">
+						<svg class="icon-house" width="33" height="31">
+							<use href="./images/sprite/symbol-defs.svg#icon-house"></use>
+						</svg>
+					</div>
               <h3 class="about-subtitle">Investmant Banking</h3>
               <p class="about-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
@@ -87,6 +96,11 @@
               </p>
             </li>
             <li class="about-item">
+					<div class="about-icon">
+						<svg class="icon-book" width="35" height="35">
+							<use href="./images/sprite/symbol-defs.svg#icon-book"></use>
+						</svg>
+					</div>
               <h3 class="about-subtitle">Portfolio Manager</h3>
               <p class="about-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
@@ -94,6 +108,11 @@
               </p>
             </li>
             <li class="about-item">
+					<div class="about-icon">
+						<svg class="icon-pen"  width="35" height="35">
+							<use href="./images/sprite/symbol-defs.svg#icon-pen"></use>
+						</svg>
+					</div>
               <h3 class="about-subtitle">Tax & Custudio</h3>
               <p class="about-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
@@ -245,7 +264,7 @@
           <p class="prof-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
           </p>
-          <ul class="prof-list">
+          <ul class="prof-list list">
             <li class="prof-item">
               <img
                 src="./images/section-professional/john-doe.jpg"
@@ -254,8 +273,8 @@
                 height="280"
               />
               <div class="prof-content">
-                <h3>John Doe</h3>
-                <p>President</p>
+                <h3 class="prof-name">John Doe</h3>
+                <p class="prof-position">President</p>
               </div>
             </li>
             <li class="prof-item">
@@ -266,8 +285,8 @@
                 height="280"
               />
               <div class="prof-content">
-                <h3>Jane Doe</h3>
-                <p>Vice President</p>
+                <h3 class="prof-name">Jane Doe</h3>
+                <p class="prof-position">Vice President</p>
               </div>
             </li>
             <li class="prof-item">
@@ -278,8 +297,8 @@
                 height="280"
               />
               <div class="prof-content">
-                <h3>Steve Smith</h3>
-                <p>Marketing Head</p>
+                <h3 class="prof-name">Steve Smith</h3>
+                <p class="prof-position">Marketing Head</p>
               </div>
             </li>
           </ul>
