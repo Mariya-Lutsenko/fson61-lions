@@ -18,6 +18,10 @@ body {
   line-height: 1.56;
   color: var(--main-color-text);
 }
+
+address {
+  font-style: normal;
+}
 /*==============general class==============*/
 
 html {
