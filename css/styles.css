@@ -19,9 +19,6 @@ body {
   color: var(--main-color-text);
 }
 
-button {
-  color: teal;
-}
 /*==============general class==============*/
 
 html {
