@@ -75,9 +75,27 @@ address {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /*==============/general class==============*/
 
 /*==============header ==============*/
+
+.header {
+  position: fixed;
+  width: 100%;
+}
 
 .header .container {
   padding: 0 50px;
@@ -169,7 +187,9 @@ address {
 
 /* ================ / Background overlay / =============== */
 
-.background-overlay {
+/* Section hero */
+
+.section-hero {
   margin: 0 auto;
   max-width: 1360px;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -178,17 +198,12 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: grey;
+  padding-top: 279px;
+  padding-bottom: 284px;
 }
-
-/* Section hero */
 
 .button-icon {
   margin-right: 6px;
-}
-
-.section-hero {
-  padding-top: 279px;
-  padding-bottom: 284px;
 }
 
 .hero {
@@ -221,25 +236,15 @@ address {
   background-color: var(--section-about-background);
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+.section-about .container {
+  padding-left: 66px;
+  padding-right: 66px;
 }
 
 .about-list {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-left: 66px;
-  padding-right: 66px;
 }
 
 .about-item {
