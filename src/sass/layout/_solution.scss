@@ -1,0 +1,16 @@
+.solution .container {
+  display: flex;
+  padding: 0;
+}
+
+.solution-content-wrapper {
+  background-color: var(--logo-color);
+  padding: 84px 44px 84px 30px;
+}
+
+.solution .solution-top-title,
+.solution .solution-title,
+.solution .solution-text {
+  color: var(--secondary-color-text);
+  text-align: start;
+}
