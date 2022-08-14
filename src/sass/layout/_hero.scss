@@ -1,4 +1,4 @@
-.section-hero {
+.hero {
   margin: 0 auto;
   max-width: 1360px;
   background-image: linear-gradient(
@@ -13,30 +13,34 @@
   background-color: grey;
   padding-top: 279px;
   padding-bottom: 284px;
-}
-
-.button-icon {
-  margin-right: 6px;
-}
-
-.hero {
   text-align: center;
-}
 
-.hero-title {
-  margin-bottom: 25px;
+  &-button-icon {
+    margin-right: 6px;
+  }
 
-  color: var(--hero-color-text);
+  &-title {
+    margin-bottom: 25px;
 
-  font-weight: 300;
-  font-size: 55px;
-  line-height: 1.2;
-}
+    color: var(--hero-color-text);
 
-.hero-description {
-  color: var(--hero-color-text);
-  margin-bottom: 29px;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 1.2;
+  }
 
-  font-size: 22px;
-  line-height: 1.68;
+  &-description {
+    color: var(--hero-color-text);
+    margin-bottom: 29px;
+
+    font-size: 22px;
+    line-height: 1.68;
+  }
+
+  &-button {
+    @extend .button;
+
+    width: 165px;
+    background-color: var(--green-background);
+  }
 }
