@@ -2,33 +2,24 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  &-description {
-    margin-bottom: 15px;
-
-    font-size: 20px;
-    line-height: 1.65;
-    text-align: center;
-  }
-
-  &-title {
-    margin-bottom: 34px;
-
-    font-weight: 300;
-    font-size: 38px;
-    line-height: 1.26;
-    text-align: center;
-  }
-
-  &-text {
-    margin-bottom: 39px;
-
-    text-align: center;
-  }
-
   &-list {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
+  }
+
+  &-item {
+    overflow: hidden;
+  }
+
+  .gallery-link {
+    display: block;
+    transition: transform 400ms linear;
+  }
+
+  .gallery-link:hover,
+  .gallery-link:focus {
+    transform: scale(1.1);
   }
 }
