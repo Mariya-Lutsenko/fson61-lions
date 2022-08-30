@@ -9,13 +9,6 @@
     padding: 84px 44px 84px 30px;
   }
 
-  & .solution-top-title,
-  & .solution-title,
-  & .solution-text {
-    color: var(--secondary-color-text);
-    text-align: start;
-  }
-
   &-btn {
     @extend .button;
 
